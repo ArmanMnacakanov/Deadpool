@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listening</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <audio id="myAudio">
+        <source src="./DMX - X Gon' Give It To Ya (mp3cut.net).mp3" type="audio/mp3">
+    </audio>
+    <button id="Listen_Btn">Listen a music for Deadpool !!</button>
+    <div class="Deadpool_Head">
+        <div class="Eyes"></div>
+    </div>
+
+
+    <script>
+        const Listen_Btn = document.getElementById('Listen_Btn');
+        const audio = document.getElementById('myAudio');
+        Listen_Btn.onclick = () => {
+            document.querySelector('.Deadpool_Head').style.animation = 'listen 0.8s ease-in-out infinite'
+            audio.play();
+        }
+    </script>
+
+</body>
+
+</html>
